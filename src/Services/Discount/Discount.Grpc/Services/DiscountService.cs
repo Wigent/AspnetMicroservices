@@ -34,7 +34,6 @@ namespace Discount.Grpc.Services
 
             _logger.LogInformation("Discount is retrieved for ProductName : {productName}, Amount : {amount}", coupon.ProductName, coupon.Amount);
 
-
             var couponModel = _mapper.Map<CouponModel>(coupon);
             return couponModel;
 
