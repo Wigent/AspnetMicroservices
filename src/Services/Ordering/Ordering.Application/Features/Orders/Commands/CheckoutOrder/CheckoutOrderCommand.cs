@@ -2,6 +2,7 @@
 
 namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 {
+    //TODO: Why not inherit Order model?
     public class CheckoutOrderCommand : IRequest<int>
     {
         public string UserName { get; set; }

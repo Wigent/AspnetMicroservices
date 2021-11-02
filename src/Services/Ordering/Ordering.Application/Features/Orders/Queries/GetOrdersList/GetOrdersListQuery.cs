@@ -7,6 +7,7 @@ namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
     public class GetOrdersListQuery : IRequest<List<OrdersVm>>
     {
         public string UserName { get; set; }
+        // TODO: shouldn't this be? private readonly string _username;
 
         public GetOrdersListQuery(string userName)
         {
