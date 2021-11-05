@@ -1,7 +1,10 @@
-﻿namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
+﻿using Ordering.Domain.Entities;
+
+namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
 {
-    public class OrdersVm
+    public class OrdersVm : Order
     {
+        /*
         public int Id { get; set; }
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
@@ -21,5 +24,6 @@
         public string Expiration { get; set; }
         public string CVV { get; set; }
         public int PaymentMethod { get; set; }
+        */
     }
 }

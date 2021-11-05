@@ -1,10 +1,12 @@
 ﻿using MediatR;
+using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 {
     //TODO: Why not inherit Order model?
-    public class CheckoutOrderCommand : IRequest<int>
+    public class CheckoutOrderCommand : Order, IRequest<int>
     {
+        /*
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
 
@@ -23,5 +25,6 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
         public string Expiration { get; set; }
         public string CVV { get; set; }
         public int PaymentMethod { get; set; }
+        */
     }
 }
